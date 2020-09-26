@@ -26,7 +26,7 @@ can show the child dependencies that we can prevent altogether to be installed i
 
 ## The example
 
-This package calculates the `crc32` checksum of any variable, expect closures, because it's silly.
+This package calculates the `crc32` checksum of any variable, except closures, because we are silly.
 
 Since we also are lazy, we leverage [`brick/varexporter`](https://github.com/brick/varexporter) for our
 internal operation.
