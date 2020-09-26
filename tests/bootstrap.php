@@ -5,7 +5,7 @@ register_shutdown_function(static function () {
     sort($files);
 
     file_put_contents(
-        dirname(__DIR__) . '/.composer-unused-runtime.php',
-        '<?php return ' . var_export($files, true)
+        dirname(__DIR__) . '/.composer-used-runtime.php',
+        '<?php return ' . var_export($files, true) . ';'
     );
 });
