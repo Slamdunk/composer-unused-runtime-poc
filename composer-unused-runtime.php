@@ -17,5 +17,5 @@ foreach ($usedRuntime as $file) {
 }
 $packagesUsedRuntime = array_keys($packagesUsedRuntime);
 
-echo 'The following packages will be installed in production, but are never used during the test suite:' . PHP_EOL;
+echo 'The following packages will be installed in production, but are never used during the test suite:' . PHP_EOL . PHP_EOL;
 print_r(array_diff($installed, $packagesUsedRuntime));
