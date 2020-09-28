@@ -9,7 +9,7 @@ $usedRuntime = require __DIR__ . '/.composer-used-runtime.php';
 
 $packagesUsedRuntime = [];
 foreach ($usedRuntime as $file) {
-    if (1 !== preg_match(sprintf('/^%s\/vendor\/(?<package>\w+\/\w+)\//', preg_quote(__DIR__, '/')), $file, $matches)) {
+    if (1 !== preg_match(sprintf('/^%s\/vendor\/(?<package>[^\/]+\/[^\/]+)\//', preg_quote(__DIR__, '/')), $file, $matches)) {
         continue;
     }
 
